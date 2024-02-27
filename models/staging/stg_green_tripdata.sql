@@ -41,7 +41,7 @@ cast(congestion_surcharge as numeric) as congestion_surcharge
 
 from tripdata
 where rn = 1
-where vendorid is not null
+
 -- dbt build --m <model.sql> --var 'is_test_run: false'
 {% if var('is_test_run', default=true) %}
 
